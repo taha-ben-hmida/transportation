@@ -1,0 +1,11 @@
+{
+  "name": "Java 17 Development",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "postCreateCommand": "sudo apt update && sudo apt install -y maven && mvn -version",
+  "settings": {
+    "java.home": "/usr/lib/jvm/msopenjdk-current"
+  },
+  "extensions": [
+    "vscjava.vscode-java-pack"
+  ]
+}

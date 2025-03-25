@@ -1,0 +1,26 @@
+{
+
+    "terminal.integrated.accessibleViewFocusOnCommandExecution": false,
+    "terminal.integrated.accessibleViewPreserveCursorPosition": false,
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "editor.formatOnPaste": true,
+    "terminal.integrated.ignoreBracketedPasteMode": true,
+    "maven.view": "hierarchical",
+    // Configurations Java pour l'auto-import
+    "java.imports.autoImportEnabled": true, // Active l'auto-import des classes
+    "java.referencesCodeLens.enabled": true, // Active les références sur le code
+    "java.project.importOnFirstTimeStartup": "automatic", // Import automatique du projet
+    "java.completion.importOrder": [
+        "java",
+        "javax",
+        "jakarta",
+        "org",
+        "com"
+    ],
+    "java.completion.favoriteStaticMembers": [ // Auto-import des méthodes statiques courantes
+        "org.springframework.util.Assert.*",
+        "java.util.Objects.*"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
