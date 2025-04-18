@@ -1,11 +1,19 @@
 {
-  "name": "Java 17 Development",
-  "image": "mcr.microsoft.com/devcontainers/java:17",
-  "postCreateCommand": "sudo apt update && sudo apt install -y maven && mvn -version",
-  "settings": {
-    "java.home": "/usr/lib/jvm/msopenjdk-current"
+  "name": "Java 17 Dev",
+  "image": "mcr.microsoft.com/devcontainers/java:17",  // L'image correcte pour Java 17
+  "postCreateCommand": "sdk use java 17.0.14-amzn && sudo apt update && sudo apt install -y maven && mvn -version",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "java.jdt.ls.java.home": "/usr/local/sdkman/candidates/java/17.0.14-amzn"
+      },
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
   },
-  "extensions": [
-    "vscjava.vscode-java-pack"
-  ]
+  "containerEnv": {
+    "JAVA_HOME": "/usr/local/sdkman/candidates/java/17.0.14-amzn",  // Forcer JAVA_HOME vers JDK 17
+    "MAVEN_OPTS": "--release 17"  // Forcer l'utilisation de Java 17 avec Maven
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "java.jdt.ls.java.home": "/usr/local/sdkman/candidates/java/24-amzn",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/usr/local/sdkman/candidates/java/17.0.14-ms",
+      "default": true
+    },
+    {
+      "name": "JavaSE-24",
+      "path": "/usr/local/sdkman/candidates/java/24-amzn"
+    }
+  ],
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.compile.nullAnalysis.mode": "automatic"
+}
+
